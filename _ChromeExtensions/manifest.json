@@ -1,0 +1,23 @@
+{
+"manifest_version": 2,
+"name": "Blurred Browser",
+"version": "0.1",
+"background" : {
+"scripts" : ["background.js"],
+"description": "Blurred Browser",
+"homepage_url": "http://www.falcovanburg.nl",
+"author": "Falco van Burg"
+    },
+"browser_action": {
+   "name": "Blurred Browser",
+   "default_icon": "INactive.png",
+"default_title": "icon"
+     },
+"permissions": ["tabs","http://*/*","https://*/*"],
+"content_scripts":[{
+    "js": ["content.js"],
+    "matches": ["<all_urls>"]
+    }
+
+]
+}
